@@ -16,7 +16,8 @@ namespace atividade
       int[] opts = { 1, 2, 3, 4, 5 };
 
       Console.WriteLine("Digite um numero de 1 a 5");
-      int option = Program.ReadConsole();
+      Console.Write("> ");
+      int option = Program.ReadInt();
 
       while (opts.Contains(option))
       {
@@ -31,15 +32,18 @@ namespace atividade
           case 3:
             Program.Ex1073();
             break;
+          case 4:
+            Program.Ex1079();
+            break;
         }
 
-        option = Program.ReadConsole();
+        Console.Write("> ");
+        option = Program.ReadInt();
       }
     }
 
-    static int ReadConsole()
+    static int ReadInt()
     {
-      Console.Write("> ");
       string optionStr = Console.ReadLine();
       int opt;
       int.TryParse(optionStr, out opt);
@@ -93,8 +97,7 @@ namespace atividade
 
     static void Ex1073()
     {
-      string nStr = Console.ReadLine();
-      int n = (nStr == "") ? 0 : int.Parse(nStr);
+      int n = Program.ReadInt();
 
       if (n <= 5 && n >= 2000) return;
 
@@ -102,6 +105,31 @@ namespace atividade
       {
         if (i % 2 == 0) Console.WriteLine(string.Format("{0}^{1} = {2}", i, 2, Math.Pow(i, 2)));
       }
+    }
+
+    static void Ex1079()
+    {
+      int nTestCase = Program.ReadInt();
+
+      Double[] resp = new Double[nTestCase];
+
+      for (var i = 0; i < nTestCase; i++)
+      {
+        string testCase = Console.ReadLine();
+        string[] cases = testCase.Split(" ");
+
+        if (cases.Length != 3) return;
+
+        Double a = Double.Parse(cases[0]);
+        Double b = Double.Parse(cases[1]);
+        Double c = Double.Parse(cases[2]);
+
+        Double total = ((a * 2) + (b * 3) + (c * 5)) / (2 + 3 + 5);
+
+        resp[i] = total;
+      }
+
+      resp.ToList().ForEach(a => Console.WriteLine("{0:N1}", a));
     }
   }
 }
