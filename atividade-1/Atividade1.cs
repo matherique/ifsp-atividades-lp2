@@ -16,6 +16,7 @@ namespace atividade1
       int[] opts = { 1, 2, 3, 4, 5 };
 
       Console.WriteLine("Digite um numero de 1 a 5");
+      Console.WriteLine("1 - 1049 | 2 - 1059 | 3 - 1073 | 4 - 1079 | 5 - 1133");
       Console.Write("> ");
       int option = Atividade1.ReadInt();
 
