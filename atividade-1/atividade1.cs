@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Collections.Generic;
 
-namespace atividade
+namespace atividade1
 {
-  class Program
+  class Atividade1
   {
     // 1 - https://www.urionlinejudge.com.br/judge/pt/problems/view/1049
     // 2 - https://www.urionlinejudge.com.br/judge/pt/problems/view/1059 
@@ -17,28 +17,31 @@ namespace atividade
 
       Console.WriteLine("Digite um numero de 1 a 5");
       Console.Write("> ");
-      int option = Program.ReadInt();
+      int option = Atividade1.ReadInt();
 
       while (opts.Contains(option))
       {
         switch (option)
         {
           case 1:
-            Program.Ex1049();
+            Atividade1.Ex1049();
             break;
           case 2:
-            Program.Ex1059();
+            Atividade1.Ex1059();
             break;
           case 3:
-            Program.Ex1073();
+            Atividade1.Ex1073();
             break;
           case 4:
-            Program.Ex1079();
+            Atividade1.Ex1079();
+            break;
+          case 5:
+            Atividade1.Ex1133();
             break;
         }
 
         Console.Write("> ");
-        option = Program.ReadInt();
+        option = Atividade1.ReadInt();
       }
     }
 
@@ -97,7 +100,7 @@ namespace atividade
 
     static void Ex1073()
     {
-      int n = Program.ReadInt();
+      int n = Atividade1.ReadInt();
 
       if (n <= 5 && n >= 2000) return;
 
@@ -109,7 +112,7 @@ namespace atividade
 
     static void Ex1079()
     {
-      int nTestCase = Program.ReadInt();
+      int nTestCase = Atividade1.ReadInt();
 
       Double[] resp = new Double[nTestCase];
 
@@ -130,6 +133,31 @@ namespace atividade
       }
 
       resp.ToList().ForEach(a => Console.WriteLine("{0:N1}", a));
+    }
+
+    static void Ex1133()
+    {
+      int x = Atividade1.ReadInt();
+      int y = Atividade1.ReadInt();
+
+      if (x > y)
+      {
+        for (var i = y; i < x; i++)
+        {
+          if (i % 5 == 2 || i % 5 == 3)
+          {
+            Console.WriteLine(i);
+          }
+        }
+      }
+
+      for (var i = x; i < y; i++)
+      {
+        if (i % 5 == 2 || i % 5 == 3)
+        {
+          Console.WriteLine(i);
+        }
+      }
     }
   }
 }
