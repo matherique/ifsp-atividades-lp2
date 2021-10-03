@@ -25,6 +25,9 @@ namespace atividade
           case 1:
             Program.Ex1049();
             break;
+          case 2:
+            Program.Ex1059();
+            break;
         }
 
         option = Program.ReadConsole();
@@ -35,7 +38,7 @@ namespace atividade
     {
       Console.Write("> ");
       string optionStr = Console.ReadLine();
-
+      if (optionStr == "") return 0;
       return int.Parse(optionStr);
     }
 
@@ -72,5 +75,15 @@ namespace atividade
       }
     }
 
+    static void Ex1059()
+    {
+      for (var i = 1; i <= 100; i++)
+      {
+        if (i % 2 == 0)
+        {
+          Console.WriteLine(i);
+        }
+      }
+    }
   }
 }

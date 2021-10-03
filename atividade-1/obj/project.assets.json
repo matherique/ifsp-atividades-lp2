@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/matherique/personal/ifsp/lp2/atividade/atividade.csproj",
+      "projectUniqueName": "/home/matherique/personal/ifsp/lp2/atividade-1/atividade.csproj",
       "projectName": "atividade",
-      "projectPath": "/home/matherique/personal/ifsp/lp2/atividade/atividade.csproj",
+      "projectPath": "/home/matherique/personal/ifsp/lp2/atividade-1/atividade.csproj",
       "packagesPath": "/home/matherique/.nuget/packages/",
-      "outputPath": "/home/matherique/personal/ifsp/lp2/atividade/obj/",
+      "outputPath": "/home/matherique/personal/ifsp/lp2/atividade-1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/matherique/.nuget/NuGet/NuGet.Config"
