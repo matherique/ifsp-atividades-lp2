@@ -28,6 +28,9 @@ namespace atividade
           case 2:
             Program.Ex1059();
             break;
+          case 3:
+            Program.Ex1073();
+            break;
         }
 
         option = Program.ReadConsole();
@@ -38,8 +41,10 @@ namespace atividade
     {
       Console.Write("> ");
       string optionStr = Console.ReadLine();
-      if (optionStr == "") return 0;
-      return int.Parse(optionStr);
+      int opt;
+      int.TryParse(optionStr, out opt);
+
+      return opt;
     }
 
     static void Ex1049()
@@ -83,6 +88,19 @@ namespace atividade
         {
           Console.WriteLine(i);
         }
+      }
+    }
+
+    static void Ex1073()
+    {
+      string nStr = Console.ReadLine();
+      int n = (nStr == "") ? 0 : int.Parse(nStr);
+
+      if (n <= 5 && n >= 2000) return;
+
+      for (var i = 1; i <= n; i++)
+      {
+        if (i % 2 == 0) Console.WriteLine(string.Format("{0}^{1} = {2}", i, 2, Math.Pow(i, 2)));
       }
     }
   }
