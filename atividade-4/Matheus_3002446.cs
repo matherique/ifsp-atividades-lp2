@@ -2,7 +2,7 @@
 
 namespace atividade_4
 {
-  class Program
+  class Matheus_3002446
   {
     static void Main(string[] args)
     {
