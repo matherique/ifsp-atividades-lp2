@@ -276,5 +276,41 @@ namespace lista_1
             Console.WriteLine("Valor atual do movimento: R$ {0}", atual);
         }
     }
+
+    /*
+     * Tendo como dado de entrada àaltura (h) de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+     *  a.Para homens: (72.7*h) –58
+     *  b.Para mulheres: (62.1*h) -44.7
+     */
+
+    class EX12
+    {
+        public static void Run()
+        {
+            Console.Write("Informe seu sexo: (F)eminino | (M)asculino: ");
+            string sexo = Console.ReadLine();
+
+            double altura = 0.0;
+
+            Console.Write("Informe a sua altura(m): ");
+            string alturaStr = Console.ReadLine();
+            altura = double.Parse(alturaStr);
+
+            double pesoIdeal = 0.0;
+            if (sexo == "M")
+            {
+                pesoIdeal = (72.7 * altura) - 58;
+            } else if (sexo == "F")
+            {
+                pesoIdeal = (62.1 * altura) - 44.7;
+            } else
+            {
+                Console.WriteLine("Sexo inválido");
+                return;
+            }
+
+            Console.WriteLine("Seu peso ideal é {0}", pesoIdeal);
+        }
+    }
 }
 
