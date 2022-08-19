@@ -1,0 +1,14 @@
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/bin/Debug/netcoreapp3.1/lista-1
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/bin/Debug/netcoreapp3.1/lista-1.deps.json
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/bin/Debug/netcoreapp3.1/lista-1.runtimeconfig.json
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/bin/Debug/netcoreapp3.1/lista-1.runtimeconfig.dev.json
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/bin/Debug/netcoreapp3.1/lista-1.dll
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/bin/Debug/netcoreapp3.1/lista-1.pdb
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/obj/Debug/netcoreapp3.1/lista-1.csproj.AssemblyReference.cache
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/obj/Debug/netcoreapp3.1/lista-1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/obj/Debug/netcoreapp3.1/lista-1.AssemblyInfoInputs.cache
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/obj/Debug/netcoreapp3.1/lista-1.AssemblyInfo.cs
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/obj/Debug/netcoreapp3.1/lista-1.csproj.CoreCompileInputs.cache
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/obj/Debug/netcoreapp3.1/lista-1.dll
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/obj/Debug/netcoreapp3.1/lista-1.pdb
+/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-1/lista-1/obj/Debug/netcoreapp3.1/lista-1.genruntimeconfig.cache
