@@ -227,7 +227,7 @@ namespace lista_1
     {
         public static void Run()
         {
-            int numero;
+            int numero = 0;
 
             Console.Write("Informe um numero: ");
             string numerostr = Console.ReadLine();
@@ -238,6 +238,26 @@ namespace lista_1
 
             int result = (triplo - 1) + (dobro + 1); 
             Console.WriteLine(" = {0}", result);
+        }
+    }
+
+    /*Leia um número inteiro de 4 dígitos e imprima 1 dígito por linha.*/
+    class EX10
+    {
+        public static void Run()
+        {
+            double numero = 0;
+
+            Console.Write("Informe um numero de 4 digitos: ");
+            string numerostr = Console.ReadLine();
+            numero = double.Parse(numerostr);
+
+            int d1 = Convert.ToInt32(numero / 1000.0);
+            int d2 = Convert.ToInt32((numero - (d1 * 1000)) / 100.0);
+            int d3 = Convert.ToInt32((numero - (d1 * 1000) - (d2*100)) / 10.0);
+            int d4 = Convert.ToInt32((numero - (d1 * 1000) - (d2 * 100) - (d3 * 10)) / 1.0);
+
+            Console.WriteLine("d1 = {0}, d2 = {1}, d3 = {3}, d4 = {4}", d1, d2, d3, d4);
         }
     }
 }
