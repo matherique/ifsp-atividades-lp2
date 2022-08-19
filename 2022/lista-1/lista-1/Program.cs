@@ -202,7 +202,23 @@ namespace lista_1
     /*Leia um valor em realeacotaçãododólar.Emseguida,imprimaovalorcorrespondenteemdólares.*/
     class EX8
     {
+        public static void Run()
+        {
+            double valor = 0.0;
+            double cotacao = 0.0;
 
+            Console.WriteLine("Informe o valor: ");
+            string valorStr = Console.ReadLine();
+            valor = double.Parse(valorStr);
+
+            Console.WriteLine("Informe a cotação do dolar hoje: ");
+            string cotacaoStr = Console.ReadLine();
+            cotacao = double.Parse(cotacaoStr);
+
+            double emDolares = valor * cotacao;
+            Console.WriteLine("O valor {0} reais equivale a {1} dolares", valor, emDolares);
+        }
     }
+
 }
 
