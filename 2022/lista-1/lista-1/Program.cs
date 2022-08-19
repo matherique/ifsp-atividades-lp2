@@ -190,7 +190,7 @@ namespace lista_1
         public static void Run()
         {
             double salario = 0.0;
-            Console.WriteLine("Informe o salário: ");
+            Console.Write("Informe o salário: ");
             string salarioStr = Console.ReadLine();
             salario = double.Parse(salarioStr);
 
@@ -207,11 +207,11 @@ namespace lista_1
             double valor = 0.0;
             double cotacao = 0.0;
 
-            Console.WriteLine("Informe o valor: ");
+            Console.Write("Informe o valor: ");
             string valorStr = Console.ReadLine();
             valor = double.Parse(valorStr);
 
-            Console.WriteLine("Informe a cotação do dolar hoje: ");
+            Console.Write("Informe a cotação do dolar hoje: ");
             string cotacaoStr = Console.ReadLine();
             cotacao = double.Parse(cotacaoStr);
 
