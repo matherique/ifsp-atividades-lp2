@@ -163,7 +163,24 @@ namespace lista_1
      Escolha uma fórmula da física para codificar, solicite as informações necessárias para o cálculo e apresente o resultado.*/
     class EX6
     {
+        public static void Run()
+        {
+            double distancia = 0.0;
+            double tempo  = 0.0;
 
+            Console.WriteLine("Calculo da velocidade média");
+            Console.Write("Informe uma distancia (m): ");
+            string distanciaStr = Console.ReadLine();
+            distancia = double.Parse(distanciaStr);
+
+
+            Console.Write("Informe um tempo (h): ");
+            string tempoStr = Console.ReadLine();
+            tempo = double.Parse(tempoStr);
+
+            double velocidade = distancia / tempo;
+            Console.WriteLine("A velocidade média é {0}km/h", velocidade);
+        }
     }
 }
 
