@@ -260,5 +260,21 @@ namespace lista_1
             Console.WriteLine("d1 = {0}, d2 = {1}, d3 = {3}, d4 = {4}", d1, d2, d3, d4);
         }
     }
+
+    /*Marquesito, aluno do Instituto, começou a investir em criptomoedas. De início ele tem R$1000,00 para  realizar  seu primeiro investimento. No primeiro dia, seu patrimônio caiu 12,4%, no  segundo subiu 1,8%, no terceiro subiu 5,6% e, no quarto caiu 4,5%. Crie um código para calcular qual o valor atual dos investimentosde Marquesito.*/
+
+    class EX11
+    {
+        public static void Run()
+        {
+            double patrimonio = 1000.0;
+
+            double movimentacao = -0.124 + 0.018 + 0.056 - 0.045;
+
+            double atual = patrimonio * (1 + movimentacao);
+
+            Console.WriteLine("Valor atual do movimento: R$ {0}", atual);
+        }
+    }
 }
 
