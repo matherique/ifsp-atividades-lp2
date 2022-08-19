@@ -220,5 +220,25 @@ namespace lista_1
         }
     }
 
+    /*
+     * Leia um número inteiro e imprima a soma do antecessor do seu triplo como sucessor do seu dobro
+     */
+    class EX9
+    {
+        public static void Run()
+        {
+            int numero;
+
+            Console.Write("Informe um numero: ");
+            string numerostr = Console.ReadLine();
+            numero = int.Parse(numerostr);
+
+            int triplo = 3 * numero;
+            int dobro = 2 * numero;
+
+            int result = (triplo - 1) + (dobro + 1); 
+            Console.WriteLine(" = {0}", result);
+        }
+    }
 }
 
