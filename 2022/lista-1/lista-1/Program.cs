@@ -182,5 +182,27 @@ namespace lista_1
             Console.WriteLine("A velocidade média é {0}km/h", velocidade);
         }
     }
+
+    /*
+     Escreva  um  algoritmo  que receba o salário de um funcionário, calcule e mostre o novo salário, sabendo-se que este sofreu um aumento de 33,7%.*/
+    class EX7
+    {
+        public static void Run()
+        {
+            double salario = 0.0;
+            Console.WriteLine("Informe o salário: ");
+            string salarioStr = Console.ReadLine();
+            salario = double.Parse(salarioStr);
+
+            double novoSalario = salario * (1 + 0.337);
+            Console.WriteLine("Seu novo salário é {0}", novoSalario);
+        }
+    }
+
+    /*Leia um valor em realeacotaçãododólar.Emseguida,imprimaovalorcorrespondenteemdólares.*/
+    class EX8
+    {
+
+    }
 }
 
