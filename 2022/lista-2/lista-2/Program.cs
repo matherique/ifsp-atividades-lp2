@@ -35,5 +35,22 @@ namespace lista_2
             Console.WriteLine("Os numeros informados em ordem crescente: {0}, {1}, {2}", result[0], result[1], result[2]);
         }
     }
+
+    class EX1_b {
+
+        public static void Run()
+        {
+          double radiano = 0;
+
+          Console.Write("Informe um angulo em radianos: ");
+          string radianoStr = Console.ReadLine();
+          radiano = double.Parse(radianoStr);
+          
+          double PI = 3.14;
+          double graus =  radiano * (180.0 / PI);
+          
+          Console.WriteLine("{0} rad = {1}º", radiano, graus);
+        }
+    }
 }
 
