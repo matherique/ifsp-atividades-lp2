@@ -104,13 +104,50 @@ namespace lista_2
                 return;
             }
 
-            if (n2 > n1) {
+            if (n2 > n1) { 
                 Console.WriteLine(n2);
                 return;
             }
 
             Console.WriteLine("Os numeros são iguais");
         }
+    }
+
+    class EX1_f {
+        public static void Run() {
+            Console.Write("Informe um numer: ");
+            string nStr = Console.ReadLine();
+            int n = int.Parse(nStr);
+
+            string dia = "Inválido";
+
+            switch (n) {
+                case 1:
+                    dia = "Domingo";
+                    break;
+                case 2:
+                    dia = "Segunda-feira";
+                    break;
+                case 3:
+                    dia = "Terça-feira";
+                    break;
+                case 4:
+                    dia = "Quarta-feira";
+                    break;
+                case 5:
+                    dia = "Quinta-feira";
+                    break;
+                case 6:
+                    dia = "Sexta-feira";
+                    break;
+                case 7:
+                    dia = "Sabado";
+                    break;
+            }
+
+            Console.WriteLine(dia);
+        }
+
     }
 }
 
