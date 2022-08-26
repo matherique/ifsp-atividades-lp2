@@ -52,5 +52,23 @@ namespace lista_2
           Console.WriteLine("{0} rad = {1}º", radiano, graus);
         }
     }
+
+
+    class EX1_c {
+      public static void Run() {
+
+        Console.Write("Informe o tamanho do cateto a: ");
+        string aStr = Console.ReadLine();
+        double a = double.Parse(aStr);
+
+        Console.Write("Informe o tamanho do cateto b: ");
+        string bStr = Console.ReadLine();
+        double b = double.Parse(bStr);
+
+        double c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
+
+        Console.WriteLine("c = {0}", c);
+      }
+    }
 }
 
