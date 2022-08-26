@@ -86,5 +86,31 @@ namespace lista_2
             Console.WriteLine(Math.Sqrt(n));
         }
     }
+
+    class EX1_e
+    {
+        public static void Run()
+        {
+            Console.WriteLine("Informe um numero: ");
+            string n1Str = Console.ReadLine();
+            int n1 = int.Parse(n1Str);
+
+            Console.WriteLine("Informe um numero: ");
+            string n2Str = Console.ReadLine();
+            int n2 = int.Parse(n2Str);
+
+            if (n1 > n2) {
+                Console.WriteLine(n1);
+                return;
+            }
+
+            if (n2 > n1) {
+                Console.WriteLine(n2);
+                return;
+            }
+
+            Console.WriteLine("Os numeros são iguais");
+        }
+    }
 }
 
