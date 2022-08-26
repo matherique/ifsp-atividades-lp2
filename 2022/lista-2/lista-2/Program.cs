@@ -70,5 +70,21 @@ namespace lista_2
         Console.WriteLine("c = {0}", c);
       }
     }
+
+    class EX1_d
+    {
+        public static void Run()
+        {
+            Console.WriteLine("Informe um numero: "); 
+            string nStr = Console.ReadLine();
+            int n = int.Parse(nStr);
+
+            if (n < 0 && n % 2 != 0) {
+                return;
+            }
+
+            Console.WriteLine(Math.Sqrt(n));
+        }
+    }
 }
 
