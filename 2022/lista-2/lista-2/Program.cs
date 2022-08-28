@@ -187,5 +187,30 @@ namespace lista_2
         Console.WriteLine("{0} {1} {2} = {3}", n1, operador, n2, result);
       }
     }
+
+    class Ex1_h {
+      public static void Run() {
+        Console.Write("Informe um numero: ");
+        string n1str = Console.ReadLine();
+        int n1 = int.Parse(n1str);
+          
+        bool isMod3 = n1 % 3 == 0;
+        bool isMod5 = n1 % 5 == 0;
+
+        if (isMod3 && isMod5) {
+          return;
+        }
+
+        if (isMod3) {
+          Console.WriteLine("É divisivel por 3");
+          return;
+        }
+
+        if (isMod5) {
+          Console.WriteLine("É divisivel por 5");
+          return;
+        }
+      }
+    }
 }
 
