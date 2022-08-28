@@ -149,5 +149,43 @@ namespace lista_2
         }
 
     }
+
+    class EX1_g {
+      public static void Run() {
+        Console.Write("Informe um numero: ");
+        string n1str = Console.ReadLine();
+        int n1 = int.Parse(n1str);
+
+        Console.Write("Informe um numero: ");
+        string n2str = Console.ReadLine();
+        int n2 = int.Parse(n2str);
+
+        Console.Write("Informe um operador: ");
+        string operador = Console.ReadLine();
+        operador = operador.Trim();
+
+        int result = 0;
+        switch (operador) {
+          case "+": 
+            result = n1 + n2;
+            break;
+          case "-": 
+            result = n1 - n2;
+            break;
+          case "*": 
+            result = n1 * n2;
+            break;
+          case "/": 
+            result = n1 / n2;
+            break;
+          default:  
+            Console.WriteLine("Operador Invalido");
+            return;
+        }
+
+
+        Console.WriteLine("{0} {1} {2} = {3}", n1, operador, n2, result);
+      }
+    }
 }
 
