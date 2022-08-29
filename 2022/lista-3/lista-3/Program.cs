@@ -72,5 +72,28 @@ namespace lista_3
             Console.WriteLine("Média aritmética: {0}", media);
         }
     }
+
+    class EX3
+    {
+        public static void Run()
+        {
+            Console.Write("Informe um numero: ");
+            int x = int.Parse(Console.ReadLine());
+
+            Console.Write("Informe um numero (maior que o informado anteriormente): ");
+            int y = int.Parse(Console.ReadLine());
+
+
+            for (int i = x; i < y; i++)
+            {
+                if (i % 7 == 3)
+                {
+                    Console.Write(i);
+                }
+
+                Console.Write(" ");
+            }
+        }
+    }
 }
 
