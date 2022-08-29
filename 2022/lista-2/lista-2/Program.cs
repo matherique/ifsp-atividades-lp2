@@ -286,4 +286,48 @@ namespace lista_2
         }
     }
 
+    class EX1_k
+    {
+        public static void Run()
+        {
+            Console.Write("Informe a quantidade vendida: ");
+            string vendidoStr = Console.ReadLine();
+            double vendido = double.Parse(vendidoStr);
+
+            double comissao = EX1_k.calculaComissao(vendido);
+
+            Console.WriteLine("Valor da comissão {0}", comissao);
+        }
+
+        public static double calculaComissao(double vendido)
+        {
+            if (vendido >= 100000)
+            {
+                return (vendido * 0.16) + 700;
+            }
+            else if (vendido < 100000 && vendido >= 80000)
+            {
+                return (vendido * 0.14) + 650;
+            }
+            else if (vendido < 80000 && vendido >= 60000)
+            {
+                return (vendido * 0.14) + 600;
+            }
+            else if (vendido < 60000 && vendido >= 40000)
+            {
+                return (vendido * 0.14) + 550;
+            }
+            else if (vendido < 40000 && vendido >= 20000)
+            {
+                return (vendido * 0.14) + 500;
+            }
+            else if (vendido < 20000)
+            {
+                return (vendido * 0.14) * 400;
+            }
+
+            return 0.0;
+        }
+    }
+
 }
