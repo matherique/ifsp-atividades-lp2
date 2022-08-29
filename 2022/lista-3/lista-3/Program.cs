@@ -6,7 +6,7 @@ namespace lista_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            EX6.Run();
         }
     }
 
@@ -149,6 +149,26 @@ namespace lista_3
             }
 
             Console.WriteLine();
+        }
+    }
+
+    class EX6
+    {
+        public static void Run()
+        {
+
+            Console.Write("Informe um numero: ");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
         }
     }
 }
