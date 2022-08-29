@@ -124,5 +124,32 @@ namespace lista_3
             Console.WriteLine("Total impares: {0}", total_impar);
         }
     }
+
+
+    class EX5
+    {
+        public static void Run()
+        {
+            Console.Write("Informe um numero: ");
+            int p = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < p; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    continue;
+                }
+
+                if (i % 3 == 0 && i % 6 != 0)
+                {
+                    Console.Write(i);
+                }
+
+                Console.Write(" ");
+            }
+
+            Console.WriteLine();
+        }
+    }
 }
 
