@@ -212,5 +212,31 @@ namespace lista_2
         }
       }
     }
+
+    class Ex1_i {
+      public static void Run() {
+        Console.Write("Informe distancia percorrida em km: ");
+        string distanciaStr = Console.ReadLine();
+        double distancia = double.Parse(distanciaStr);
+
+        Console.Write("Informe a quantidade de litros de gasolina consumidos em L: ");
+        string litrosStr = Console.ReadLine();
+        double litros = double.Parse(litrosStr);
+
+        double consumo = distancia / litros;
+
+        if (consumo > 14) {
+          Console.WriteLine("Venda o carro ou compre um posto!");
+          return;
+        }
+
+        if (consumo < 8) {
+          Console.WriteLine("Super economico!");
+          return;
+        }
+
+        Console.WriteLine("Economico!");
+      }
+    }
 }
 
