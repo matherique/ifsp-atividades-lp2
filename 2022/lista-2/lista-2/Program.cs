@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace lista_2
 {
@@ -28,7 +28,7 @@ namespace lista_2
             string n3Str = Console.ReadLine();
             n3 = int.Parse(n3Str);
 
-            int[] result = new int[] {n1,n2,n3};
+      int[] result = new int[] { n1, n2, n3 };
 
             Array.Sort(result);
 
@@ -36,7 +36,8 @@ namespace lista_2
         }
     }
 
-    class EX1_b {
+  class EX1_b
+  {
 
         public static void Run()
         {
@@ -47,15 +48,17 @@ namespace lista_2
           radiano = double.Parse(radianoStr);
           
           double PI = 3.14;
-          double graus =  radiano * (180.0 / PI);
+      double graus = radiano * (180.0 / PI);
           
           Console.WriteLine("{0} rad = {1}º", radiano, graus);
         }
     }
 
 
-    class EX1_c {
-      public static void Run() {
+  class EX1_c
+  {
+    public static void Run()
+    {
 
         Console.Write("Informe o tamanho do cateto a: ");
         string aStr = Console.ReadLine();
@@ -79,7 +82,8 @@ namespace lista_2
             string nStr = Console.ReadLine();
             int n = int.Parse(nStr);
 
-            if (n < 0 && n % 2 != 0) {
+      if (n < 0 && n % 2 != 0)
+      {
                 return;
             }
 
@@ -99,12 +103,14 @@ namespace lista_2
             string n2Str = Console.ReadLine();
             int n2 = int.Parse(n2Str);
 
-            if (n1 > n2) {
+      if (n1 > n2)
+      {
                 Console.WriteLine(n1);
                 return;
             }
 
-            if (n2 > n1) { 
+      if (n2 > n1)
+      {
                 Console.WriteLine(n2);
                 return;
             }
@@ -113,15 +119,18 @@ namespace lista_2
         }
     }
 
-    class EX1_f {
-        public static void Run() {
+  class EX1_f
+  {
+    public static void Run()
+    {
             Console.Write("Informe um numer: ");
             string nStr = Console.ReadLine();
             int n = int.Parse(nStr);
 
             string dia = "Inválido";
 
-            switch (n) {
+      switch (n)
+      {
                 case 1:
                     dia = "Domingo";
                     break;
@@ -150,8 +159,10 @@ namespace lista_2
 
     }
 
-    class EX1_g {
-      public static void Run() {
+  class EX1_g
+  {
+    public static void Run()
+    {
         Console.Write("Informe um numero: ");
         string n1str = Console.ReadLine();
         int n1 = int.Parse(n1str);
@@ -165,7 +176,8 @@ namespace lista_2
         operador = operador.Trim();
 
         int result = 0;
-        switch (operador) {
+      switch (operador)
+      {
           case "+": 
             result = n1 + n2;
             break;
@@ -188,8 +200,10 @@ namespace lista_2
       }
     }
 
-    class Ex1_h {
-      public static void Run() {
+  class Ex1_h
+  {
+    public static void Run()
+    {
         Console.Write("Informe um numero: ");
         string n1str = Console.ReadLine();
         int n1 = int.Parse(n1str);
@@ -197,24 +211,29 @@ namespace lista_2
         bool isMod3 = n1 % 3 == 0;
         bool isMod5 = n1 % 5 == 0;
 
-        if (isMod3 && isMod5) {
+      if (isMod3 && isMod5)
+      {
           return;
         }
 
-        if (isMod3) {
+      if (isMod3)
+      {
           Console.WriteLine("É divisivel por 3");
           return;
         }
 
-        if (isMod5) {
+      if (isMod5)
+      {
           Console.WriteLine("É divisivel por 5");
           return;
         }
       }
     }
 
-    class Ex1_i {
-      public static void Run() {
+  class Ex1_i
+  {
+    public static void Run()
+    {
         Console.Write("Informe distancia percorrida em km: ");
         string distanciaStr = Console.ReadLine();
         double distancia = double.Parse(distanciaStr);
@@ -225,12 +244,14 @@ namespace lista_2
 
         double consumo = distancia / litros;
 
-        if (consumo > 14) {
+      if (consumo > 14)
+      {
           Console.WriteLine("Venda o carro ou compre um posto!");
           return;
         }
 
-        if (consumo < 8) {
+      if (consumo < 8)
+      {
           Console.WriteLine("Super economico!");
           return;
         }
