@@ -45,5 +45,32 @@ namespace lista_3
             Console.WriteLine("Menor = {0}", menor);
         }
     }
+
+    class EX2
+    {
+        public static void Run()
+        {
+            int n = 0;
+            int total = 0;
+            int i = 0;
+
+            while (true)
+            {
+                Console.Write("Informe um numero: (digite 0 para finalizar) ");
+                n = int.Parse(Console.ReadLine());
+
+                total += n;
+
+                i += 1;
+                if (n == 0)
+                {
+                    break;
+                }
+            }
+
+            int media = total / i;
+            Console.WriteLine("Média aritmética: {0}", media);
+        }
+    }
 }
 
