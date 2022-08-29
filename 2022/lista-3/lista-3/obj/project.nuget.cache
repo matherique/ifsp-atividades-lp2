@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "I5UxT+Ws/CJikxlIkHPejj1L1WJCK738xeqTKzzBoewN2E8eGUkxMGqfADc//FGcqOVSzl4k5UlIafUbhkGBLA==",
+  "success": true,
+  "projectFilePath": "/Users/matherique/personal/ifsp-atividades-lp2/2022/lista-3/lista-3/lista-3.csproj",
+  "expectedPackageFiles": [
+    "/Users/matherique/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/matherique/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.28/microsoft.netcore.app.host.osx-x64.3.1.28.nupkg.sha512",
+    "/Users/matherique/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
