@@ -95,5 +95,34 @@ namespace lista_3
             }
         }
     }
+
+    class EX4
+    {
+        public static int MAGIC_NUMBER = 97;
+        public static void Run()
+        {
+            int total_par = 0;
+            int total_impar = 0;
+
+            int n = 0;
+
+            for (int i = 0; i < MAGIC_NUMBER; i++)
+            {
+                Console.Write("Informe um numero: ({0}/{1})", i + 1, MAGIC_NUMBER);
+                n = int.Parse(Console.ReadLine());
+
+                if (n % 2 == 0)
+                {
+                    total_par += n;
+                    continue;
+                }
+
+                total_impar += n;
+            }
+
+            Console.WriteLine("Total pares: {0}", total_par);
+            Console.WriteLine("Total impares: {0}", total_impar);
+        }
+    }
 }
 
